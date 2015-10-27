@@ -13,4 +13,8 @@ class MySite < Sinatra::Base
   get "/blog" do
     erb :blog
   end
+
+  get "/project" do
+    erb :project
+  end
 end
