@@ -33,7 +33,7 @@
       <article>
         <header>
         <h3>Posted by: Strawberry Lover</h3>
-        <p>Posted on <%= Time.now %></p>
+        <p>Posted on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></p>
       </header>
       <p>That is one cute baby.</p>
       </article>
@@ -41,7 +41,7 @@
       <article>
         <header>
           <h3>Posted by: Las fresas son la hostia</h3>
-          <p>Posted on <%= Time.now %></p>
+          <p>Posted on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></p>
         </header>
         <p>Me la comería!</p>
       </article>
