@@ -43,17 +43,19 @@ img.responsive {
 @media all and ( min-width: 750px ) {
 
   /* set col widths */
-  .col-6 {
-    width: 50%;
-  }
   .col-2 {
     width: 16.6666666667%;
+  }
+  .col-3 {
+    width: 33.33333333%;
+  }
+  .col-6 {
+    width: 50%;
   }
   .col-10 {
     width: 83.3333333333%;
   }
 }
-
 
 body {
   /*width: 960px;
