@@ -14,7 +14,7 @@ http://codepen.io/SitePoint/pen/wLzxJ?editors=110
 /* global */
 .grid {
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   max-width: 1200px;
   background-color: #fff;
 }
@@ -113,6 +113,23 @@ img.scale {
 
 }
 
+/* FOOTER */
+footer {
+  background-color: rgb(163, 0, 32);
+  margin: 0 -20px;
+  padding: 10px 0;
+  color: white;
+}
+
+footer a {
+  color: rgb(161, 184, 0);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* Navigation bar styling from
 http://css-snippets.com/simple-horizontal-navigation/
 */
@@ -122,7 +139,7 @@ nav ul {
   background-color: #444;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin: 0 -20px;
 }
 
 nav li {
