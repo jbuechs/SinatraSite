@@ -97,10 +97,14 @@ img.scale {
 }
 
  /* ABOUT PAGE */
+.img-row {
+   max-height: 550px;
+ }
+
 .about-img {
   /*max-height: 428px;*/
-  max-height: 420px;
-  width: auto;
+  height: 75%;
+  /*width: auto;*/
   margin: auto;
   overflow: hidden;
 }
