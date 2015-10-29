@@ -58,7 +58,8 @@ img.responsive {
 body {
   /*width: 960px;
   margin: auto;*/
-  background: #ccc;
+  background-image: url(strawberry_texture.png);
+  /*background: #ccc;*/
   font-family: 'Lato', sans-serif;
 }
 
