@@ -10,7 +10,7 @@
   <title><%= @title %> | Jennie's Website</title>
 </head>
 <body>
-  <container>
+  <div class="grid">
     <div class="row">
       <div class="col-2"><img src="strawberry-logo.png" class="logo" alt="logo of strawberry kid"></div>
       <div class="col-10"><h1><%= @title %></h1></div>
@@ -25,6 +25,6 @@
       </ul>
     </nav>
     <%= yield %>
-  </container>
+  </div>
 </body>
 </html>
