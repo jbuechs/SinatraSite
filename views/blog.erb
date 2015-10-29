@@ -1,7 +1,7 @@
 <!-- Article format from http://html5doctor.com/the-article-element/ -->
 <article>
   <header>
-    <h1>My Sweet Strawberry</h1>
+    <h2>My Sweet Strawberry</h2>
     <img src="mom_and_strawberry.jpg" alt="Holiday in strawberry costume" title="Holiday in a strawberry costume" width=25%>
     <p>Published: <time pubdate datetime="2015-10-25">25th October, 2016</time></p>
   </header>
@@ -12,10 +12,10 @@
   <aside>The garden strawberry (or simply <strong>strawberry; Fragaria × ananassa</strong>) is a widely grown hybrid species of the genus <i>Fragaria</i> (collectively known as the strawberries). </aside>
 
   <section>
-    <h2>Comments</h2>
+    <h3>Comments</h3>
     <article>
       <header>
-      <h3>Posted by: Strawberry Lover</h3>
+      <h4>Posted by: Strawberry Lover</h4>
       <p>Posted on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></p>
     </header>
     <p>That is one cute baby.</p>
@@ -23,7 +23,7 @@
 
     <article>
       <header>
-        <h3>Posted by: Las fresas son la hostia</h3>
+        <h4>Posted by: Las fresas son la hostia</h4>
         <p>Posted on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></p>
       </header>
       <p>Me la comería!</p>

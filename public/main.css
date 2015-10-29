@@ -1,21 +1,125 @@
-/*
- * This is a CSS file.
- * Inside of CSS files comments are started with /* and ended with:
- */
+body {
+  width: 960px;
+  margin: auto;
+  background: #ccc;
+  font-family: 'Lato', sans-serif;
+}
 
-/*
- * Starting with Wave 2 of this project we will be using CSS to style our
- * web pages. You should place all of your styles in this file and then
- * reference it from each of your HTML files.
- */
+h1 {
+  text-align: right;
+  font-family: 'Volkhov', serif;
+  font-weight: 700;
+  font-size: 68px;
+  margin: 10px auto 0px auto;
+  color: rgb(161, 184, 0);
+  -webkit-text-stroke: 2px rgb(163, 0, 32); /* stroke color and weight */
+}
 
-/*
- * This file is located at "public/main.css" in your project directory.
- * Because it is in the "public" directory, Sinatra knows to make the file
- * accessible to your HTML files when you use the src="path/to/file"
- * attribute on the appropriate tags.
- *
- * For example, to include an image into your site, place the file in the
- * public directory and use <img src="/name_of_image.png"> in your HTML
- * file. The "public" part of the path should *not* be included.
- */
+/* Grid layout */
+
+.container {
+
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.col-2 {
+  width: 16.6666666%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-10 {
+  width: 83.33333333%;
+}
+
+/* Image */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /*max-height: 480px;*/
+}
+
+.img-row {
+  max-height: 480px;
+}
+
+.logo {
+  width: 40%;
+  height: 40%;
+  padding: 10px;
+}
+
+/* Navigation bar styling from http://css-snippets.com/simple-horizontal-navigation/
+*/
+
+nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+nav a:hover {
+  background-color: rgb(163, 0, 32);
+}
+
+nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  /* Option 1 - Display Inline */
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
+
+/* IMAGES */
+.giphy {
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+
+/* TEXT */
+.center-text {
+  text-align: center;
+}
+
+.large-text {
+  font-size: 1.2em;
+}
