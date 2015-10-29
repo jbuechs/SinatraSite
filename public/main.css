@@ -82,13 +82,6 @@ img.scale {
   /*max-width: 100%;*/
   height: auto !important;
 }
-/*
-.img-row {
-  max-height: 480px;
-  overflow: hidden;
-  height: auto;
-  width: auto;
-}*/
 
 .logo {
   /*width: 40%;*/
@@ -105,10 +98,11 @@ img.scale {
 
  /* ABOUT PAGE */
 .about-img {
-  width: 90%;
-  max-height: 480px;
-  overflow:hidden;
-  height:auto;
+  /*max-height: 428px;*/
+  max-height: 420px;
+  width: auto;
+  margin: auto;
+  overflow: hidden;
 }
 
 .about-caption {
