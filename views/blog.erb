@@ -9,7 +9,15 @@
   </div>
   <div class="row">
     <div class="col-2">
-      <h3>How Old Is Holiday?</h3>
+      <h3>How Old Is Holiday Today?</h3>
+      <p>
+        <% t = (Time.now - Time.new(2014, 8, 18, 21, 56, 0, "+06:00")).to_i %>
+        <% mm, ss = t.divmod(60) %>
+        <% hh, mm = mm.divmod(60) %>
+        <% dd, hh = hh.divmod(24) %>
+        <% yy, dd = dd.divmod(365) %>
+        Holiday is <%= yy %> year, <%= dd %> days, <%= hh %> hours, <%= mm %> minutes, and <%= ss %> seconds old!
+      </p>
     </div>
     <div class="col-8">
       <div class="row">
@@ -24,11 +32,9 @@
       <div class="row">
         <div class="col-12">
           <h3>Comments</h3>
-          <h4 class="comment-title">Posted by: Strawberry Lover</h4>
-          <p>Posted on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></p>
+          <h4 class="comment-title"><strong>Posted by: Strawberry Lover</strong> on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></h4>
           <p>That is one cute baby.</p>
-          <h4 class="comment-title">Posted by: Las fresas son la hostia</h4>
-          <p>Posted on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></p>
+          <h4 class="comment-title"><strong>Posted by: Las fresas son la hostia</strong> on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></h4>
           <p>Me la comería!</p>
         </div>
       </div>
