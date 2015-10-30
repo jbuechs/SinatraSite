@@ -49,6 +49,16 @@ img.center {
   margin: auto;
 }
 
+figure {
+  margin: 10px;
+}
+
+figcaption {
+  size: 1.2em;
+  line-height: 150%;
+  margin: 5px 15px;
+}
+
 @media all and ( min-width: 750px ) {
 
   /* set col widths */
@@ -96,15 +106,6 @@ h1 {
   display: block;
   margin: auto;
   padding: 20px;
-}
-
- /* ABOUT PAGE */
-/*.img-row {
-   max-height: 550px;
- }*/
-
-.about-caption {
-
 }
 
 /* FOOTER */
