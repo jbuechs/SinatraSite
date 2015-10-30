@@ -1,32 +1,40 @@
-<!-- Article format from http://html5doctor.com/the-article-element/ -->
 <article>
-  <header>
-    <h2>My Sweet Strawberry</h2>
-    <img src="mom_and_strawberry.jpg" alt="Holiday in strawberry costume" title="Holiday in a strawberry costume" width=25%>
-    <p>Published: <time pubdate datetime="2015-10-25">25th October, 2016</time></p>
-  </header>
-  <p>The strawberry fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness.</p>
-  <p>
-    Holiday is also widely appreciated for her aroma of Dove soap, slightly sour milk, and banana breath, soft pudgy texture, and sweetness.
-  </p>
-  <aside>The garden strawberry (or simply <strong>strawberry; Fragaria × ananassa</strong>) is a widely grown hybrid species of the genus <i>Fragaria</i> (collectively known as the strawberries). </aside>
-
-  <section>
-    <h3>Comments</h3>
-    <article>
-      <header>
-      <h4>Posted by: Strawberry Lover</h4>
-      <p>Posted on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></p>
-    </header>
-    <p>That is one cute baby.</p>
-    </article>
-
-    <article>
-      <header>
-        <h4>Posted by: Las fresas son la hostia</h4>
-        <p>Posted on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></p>
-      </header>
-      <p>Me la comería!</p>
-    </article>
-  </section>
+  <div class="row">
+    <div class="col-2 no-bottom-padding"></div>
+    <div class="col-8 no-bottom-padding">
+      <h2>My Sweet Strawberry</h2>
+      <p class="published center-text">Published: <time pubdate datetime="2015-10-25">25th October, 2016</time></p>
+    </div>
+    <div class="col-2 no-bottom-padding"></div>
+  </div>
+  <div class="row">
+    <div class="col-2">
+      <h3>How Old Is Holiday?</h3>
+    </div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col-3"><img class="responsive styled center" src="mom_and_strawberry.jpg" alt="Holiday in strawberry costume" title="Holiday in a strawberry costume"></div>
+        <div class="col-7">
+          <p>The strawberry fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness.</p>
+          <p>
+            Holiday is also widely appreciated for her aroma of Dove soap, slightly sour milk, and banana breath, soft pudgy texture, and sweetness.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3>Comments</h3>
+          <h4 class="comment-title">Posted by: Strawberry Lover</h4>
+          <p>Posted on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></p>
+          <p>That is one cute baby.</p>
+          <h4 class="comment-title">Posted by: Las fresas son la hostia</h4>
+          <p>Posted on <%= Time.now.strftime('%a %m/%d/%y at %l:%M %p') %></p>
+          <p>Me la comería!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <aside>The garden strawberry (or simply <strong>strawberry; Fragaria × ananassa</strong>) is a widely grown hybrid species of the genus <i>Fragaria</i> (collectively known as the strawberries). </aside>
+    </div>
+  </div>
 </article>

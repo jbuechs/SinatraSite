@@ -74,11 +74,20 @@ figcaption {
   .col-6 {
     width: 50%;
   }
-  .col-9 {
+  .col-7 {
+    width: 58.333333333%;
+  }
+  .col-8 {
     width: 66.66666667%;
+  }
+  .col-9 {
+    width: 75%;
   }
   .col-10 {
     width: 83.3333333333%;
+  }
+  .col-12 {
+    width: 100%;
   }
 }
 
@@ -95,6 +104,21 @@ h1 {
   margin: 10px auto 0px auto;
   color: rgb(161, 184, 0);
   -webkit-text-stroke: 2px rgb(163, 0, 32); /* stroke color and weight */
+  -moz-text-stroke: 2px rgb(163, 0, 32); /* stroke color and weight */
+}
+
+h2 {
+  font-family: 'Volkhov', serif;
+  font-size: 36px;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+h3 {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 
 /* Image */
@@ -185,4 +209,23 @@ nav a.active {
 
 .large-text {
   font-size: 1.2em;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+.published {
+  color: #333;
+}
+
+aside {
+  background-color: rgb(181, 200, 116);
+  color: #222;
+  text-align: center;
+  padding: 1.5em;
+  font-size: .9em;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
 }
