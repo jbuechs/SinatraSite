@@ -14,7 +14,7 @@ class MySite < Sinatra::Base
 
   get "/blog" do
     @title = 'My Blog'
-    erb :blog
+    haml :blog
   end
 
   get "/project" do
