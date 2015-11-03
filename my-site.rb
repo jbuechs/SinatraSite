@@ -19,6 +19,6 @@ class MySite < Sinatra::Base
 
   get "/project" do
     @title = 'My Projects'
-    erb :project
+    haml :project
   end
 end
