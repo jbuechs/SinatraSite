@@ -9,7 +9,7 @@ class MySite < Sinatra::Base
 
   get "/about" do
     @title = 'About Jennie'
-    erb :about
+    haml :about
   end
 
   get "/blog" do
