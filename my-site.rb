@@ -4,7 +4,7 @@ class MySite < Sinatra::Base
 
   get "/" do
     @title = 'My Homepage'
-    erb :index
+    haml :index
   end
 
   get "/about" do
