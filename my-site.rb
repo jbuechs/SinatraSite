@@ -1,4 +1,5 @@
 require "sinatra"
+require "sass"
 
 class MySite < Sinatra::Base
 
@@ -20,5 +21,9 @@ class MySite < Sinatra::Base
   get "/project" do
     @title = 'My Projects'
     haml :project
+  end
+
+  get '/main.css' do
+    scss :main
   end
 end
