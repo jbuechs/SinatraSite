@@ -1,0 +1,38 @@
+%article
+  .row
+    .col-2.no-bottom-padding
+    .col-8.no-bottom-padding
+      %h2 My Sweet Strawberry
+      %p.published.center-text Published: 25th October, 2016
+    .col-2.no-bottom-padding
+  .row
+    .col-2
+      %h3 How Old is Holiday Today?
+      %p
+        - t = (Time.now - Time.new(2014, 8, 18, 21, 56, 0, "+06:00")).to_i
+        - mm, ss = t.divmod(60)
+        - hh, mm = mm.divmod(60)
+        - dd, hh = hh.divmod(24)
+        - yy, dd = dd.divmod(365)
+        Holiday is #{yy} year, #{dd} days, #{hh} hours, #{mm} minutes, and #{ss} seconds old!
+    .col-8
+      .row
+        .col-3
+          %img.responsive.styled.center{ :src => "mom_and_strawberry.jpg", :alt => "Holiday in strawberry costume", :title => "Holiday in a strawberry costume"}
+        .col-7
+          %p The strawberry fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness.
+          %p Holiday is also widely appreciated for her aroma of Dove soap, slightly sour milk, and banana breath, soft pudgy texture, and sweetness.
+      .row
+        .col-12
+          %h3 Comments
+          %h4.comment-title
+            %strong Posted by: Strawberry Lover
+            on #{Time.now.strftime('%a %m/%d/%y at %l:%M %p')}
+          %p That is one cute baby.
+          %h4.comment-title
+            %strong Posted by: Las fresas son la hostia
+            on #{Time.now.strftime('%a %m/%d/%y at %l:%M %p')}
+          %p Me la comería
+    .col-2
+      %aside
+        The garden strawberry (or simply <strong>strawberry; Fragaria × ananassa</strong>) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries).

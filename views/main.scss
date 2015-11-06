@@ -1,0 +1,232 @@
+/*
+Responsive css grid layout based on tutorial from Method 4: Flexbox
+http://www.sitepoint.com/easy-responsive-css-grid-layouts/
+http://codepen.io/SitePoint/pen/wLzxJ?editors=110
+*/
+
+$red: rgb(161, 184, 0);
+$white: #fff;
+$green: rgb(163, 0, 32);
+
+/* resets */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* global */
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+  background-color: $white;
+}
+
+/* grid */
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -10px;
+  margin-bottom: 10px;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+
+[class*="col-"] {
+  padding: 10px;
+  width: 100%;
+}
+
+/* image */
+img.responsive {
+  display: block;
+  max-width: 100%;
+}
+
+img.styled {
+  border:10px solid white;
+  box-shadow: 0 2px 5px  rgba(0,0,0,.4);
+}
+
+img.center {
+  margin: auto;
+}
+
+figure {
+  margin: 10px;
+}
+
+figcaption {
+  line-height: 150%;
+  margin: 5px 15px;
+}
+
+@media all and ( min-width: 750px ) {
+
+  /* set col widths */
+  .col-2 {
+    width: 16.6666666667%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33333333%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.333333333%;
+  }
+  .col-8 {
+    width: 66.66666667%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.3333333333%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+body {
+  background-image: url(strawberry_texture.png);
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-align: right;
+  font-family: 'Volkhov', serif;
+  font-weight: 700;
+  font-size: 68px;
+  margin: 10px auto 0px auto;
+  color: $red;
+  -webkit-text-stroke: 2px $green; /* stroke color and weight */
+}
+
+h2 {
+  font-family: 'Volkhov', serif;
+  font-size: 36px;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+h3 {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+/* Image */
+.logo {
+  height: 100px;
+}
+
+.giphy {
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: $green;
+  margin: 0 -20px;
+  padding: 10px 0;
+  color: white;
+  a {
+    color: $red;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Navigation bar styling from
+http://css-snippets.com/simple-horizontal-navigation/
+*/
+
+nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0 -20px;
+}
+
+nav li {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+nav a {
+  text-decoration: none;
+  color: $white;
+  display: block;
+  transition: .3s background-color;
+}
+
+nav a:hover {
+  background-color: $green;
+}
+
+nav a.active {
+  background-color: $white;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  /* Option 1 - Display Inline */
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
+
+/* TEXT */
+.center-text {
+  text-align: center;
+}
+
+.large-text {
+  font-size: 1.2em;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+.published {
+  color: #333;
+}
+
+aside {
+  background-color: rgb(181, 200, 116);
+  color: #222;
+  text-align: center;
+  padding: 1.5em;
+  font-size: .9em;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
